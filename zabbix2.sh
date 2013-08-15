@@ -3,6 +3,8 @@
 # Valiable
 ZBX_PASS=/usr/local/etc/zabbix2
 ZBX_RC=/usr/local/etc/rc.d
+ZABBIX_SERVER_IP=""
+SERVER_NAME=""
 
 # add Zabbix-agent
 /usr/sbin/pkg_add -r zabbix2-agent
