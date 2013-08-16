@@ -19,7 +19,7 @@ sed -i '' -e 's/Hostname=Zabbix\ server/Hostname=${SERVER_NAME}/' ${ZBX_PASS}/za
 sed -i "" -e 's/\#\ EnableRemoteCommands=0/EnableRemoteCommands=1/' ${ZBX_PASS}/zabbix_agentd.conf
 
 # auto start config
-echo "zabbix_agentd_enable=\"YES\"" >> /etc/rc.conf
+# echo "zabbix_agentd_enable=\"YES\"" >> /etc/rc.conf
 
 # Zabbix agent start
 ${ZBX_RC}/zabbix_agentd start
