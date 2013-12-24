@@ -4,7 +4,7 @@
 ZBX_CONF=/usr/local/etc/zabbix2/zabbix_agentd.conf
 ZBX_RC=/usr/local/etc/rc.d
 ZABBIX_SERVER_IP=""
-SERVER_NAME=""
+SERVER_NAME=`hostname`
 
 # add Zabbix-agent
 /usr/sbin/pkg_add -r zabbix2-agent
