@@ -3,7 +3,7 @@
 # Valiable
 ZBX_CONF=/usr/local/etc/zabbix2/zabbix_agentd.conf
 ZBX_RC=/usr/local/etc/rc.d
-ZABBIX_SERVER_IP=""
+ZABBIX_SERVER_IP=$(LANG=C /sbin/ifconfig | grep 'inet addr' | grep -v 127.0.0.1 | awk '{print $2;}' | cut -d: -f2)
 SERVER_NAME=`hostname`
 
 # add Zabbix-agent
